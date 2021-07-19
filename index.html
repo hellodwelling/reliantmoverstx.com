@@ -46,11 +46,11 @@
 
 
 <div class = "flex w-full flex-col">  
-    <div  class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div class="fixed z-40 w-full lg:h-25 lg:py-4 items-start justify-start  bg-white text-gray-700  dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
       
-        <a href="#about"> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QJ6QNPB3WES36I5GR93PE21LL09Q241K7Y2N1MR8.jpeg" alt="Reliant Movers logo"> </a>
+        <a href= " #about "> <img class="h-16 w-auto relative" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/QJ6QNPB3WES36I5GR93PE21LL09Q241K7Y2N1MR8.jpeg" alt="Reliant Movers logo"> </a>
       
       <button class="lg:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -59,7 +59,8 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex lg:justify-end lg:flex-row">
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 lg:pb-0 hidden lg:flex  lg:flex-row  lg:justify-end ">
+    
       
 <a 
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
@@ -102,18 +103,18 @@
     class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" 
     href="#find-us">Service Areas
 </a>
-     
+   
+    
+  
 
-      
-         <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
-        
-            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Request a Quote</a>
-      
 
-              
-        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+    
+      <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
+      
+          <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
+            <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-            <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
+            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
             <input type="text" name="first-name" id="0-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
         </div>
@@ -140,6 +141,9 @@
 
     </form>
 </div>
+           
+      
+        
     </nav>
   </div>
 </div>
@@ -157,21 +161,51 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
             
             <h2 class="py-5 mb-5 lg:text-xl text-center lg:text-left">
             </h2>
-            <div id="cover-button">
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
+            
+            <div class="flex flex-col lg:flex-row flex-grow flex-col space-y-5 md:space-y-0 w-full lg:w-auto md:space-y-5 lg:space-y-0">
+                <div class=" w-full lg:w-auto">
                 
+ 
+        <a  class="font-small  w-full lg:w-auto" target = "_blank" href="tel:+12104736576">
+        <div class="flex text-center justify-center items-center  w-full md:auto">
+            
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#1202fc' "
     onMouseOut="this.style.backgroundColor='#ffef05'; this.style.color='white'"
     style="background-color:#ffef05; color:white"               
 
- id="" type="button" x-on:click.prevent="open = true" class=" inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-800">
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-800">
+    <h5 class="text-3xl font-extrabold">Call Now</h5> 
+</button>
+
+        </div>
+        </a>
+ 
+                </div>
+
+                <div id="cover-button" class="w-full lg:w-auto ">
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
+<button 
+ 
+    onMouseOver="this.style.backgroundColor='white'; this.style.color='#1202fc' "
+    onMouseOut="this.style.backgroundColor='#ffef05'; this.style.color='white'"
+    style="background-color:#ffef05; color:white"               
+
+ id="" type="button" x-on:click.prevent="open = true" class=" 
+  w-full lg:w-auto 
+
+    inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-800">
     <h5 class="text-3xl font-extrabold">Request a Quote</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -200,26 +234,29 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
-
-            </div>
+    </div>
  
-            </div>
+                </div>
 
-            <div >
-                 
-            <div id="" class="flex text-center justify-center items-center z-50" x-data="{open: false}">
-                
+                <div>
+                    
+ 
+    <div id="" class="flex text-center justify-center items-center z-50 w-full lg:w-auto " x-data="{open: false}">
+        
 <button 
  
     onMouseOver="this.style.backgroundColor='white'; this.style.color='#1202fc' "
     onMouseOut="this.style.backgroundColor='#ffef05'; this.style.color='white'"
     style="background-color:#ffef05; color:white"               
 
- id="side-button" type="button" x-on:click.prevent="open = true" class="mb-3 fixed bottom-0 -right-80 z-10 mr-3 md:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-800">
+ id="side-button" type="button" x-on:click.prevent="open = true" class=" 
+  
+
+   mb-3 fixed bottom-0 -right-80 z-10 mr-3 lg:mr-0 z-50 inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-gray-400 text-white hover:bg-white hover:text-blue-800">
     <h5 class="text-3xl font-extrabold">Request a Quote</h5> 
 </button>
 
-                <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="transform-none p-4 fixed h-screen w-screen flex justify-center items-center bottom-0 right-0 bg-black bg-opacity-75 z-50">
     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
             <h3 class="mb-6 text-2xl font-medium text-black text-center">Request a Quote</h3>
         <div class="block mb-4 border border-gray-200 rounded-lg">
@@ -248,8 +285,9 @@ class="flex relative flex-col w-full  bg-blue-800 text-white  lg:flex-row lg:fle
 
     </form>
 </div>
+    </div>
 
-            </div>
+                </div>
 
             </div>
         </div>
@@ -418,8 +456,9 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
+    
     <section  style= "background-color:#1202fc"   id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-blue-800 border-0 border-blue-200 text-white border-solid ">
-        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
+        <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24 ">
             
             <h2 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                 Our Services
@@ -528,45 +567,47 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </section>
     
     
-        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-blue-800   md:pt-20 xl:pt-20 xl:pb-20">
+    
+
+        <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden   bg-white text-blue-800   md:pt-20 xl:pt-20 xl:pb-20">
             <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
                 <h2  style= "color:#1202fc" class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h2>
                 <h2  style= "color:#ffef05" class="my-3 mb-10 text-xl font-medium  text-gray-400  text-center">See why our customers love us</h2>
-                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JNFL7EAC83V0T3295W5K5R6X42MEYJ6F7IHR6U97.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/JCZJOM1EPH7UVEG9K6XX28F4BYZD0CYYFG1E6H02.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/EL312J6LLX2ODT5Y20X2O9J58QONNAVK16N2C5IP.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/UO4IPA8JM11UTD1JUDOK27S6H37HWWD7D2L634G6.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/PJZ2RYCJRYAG2BLITX9HHAWEF0209WDTG9B6YZXC.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/N0KMGMINOH8Y10JJ4CPS0YQOATIDD2G9E1ILL9W0.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/BN434ZRRW68SF71F6YWD0514NCXA03HDJNZRJUB8.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/MNR2JKEXNM8TS0TZ3MQFCU3BENQO4MDJN7H6073F.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VFUONQFYWBP9Y8V8A36HBZZURA47BK7GCNT09PF9.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ULTVBT0F8TKU5YIT2MZFJOCVF4WL3DA3CBK7EHSZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WPD1NT9QMJPNJK558US7ZNHCC5HEF228A0DIM2E1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/D6VNU75DGJMVR7EYZDTEF7GYVAGBYHU3GTKYUVGW.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
+                <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row" x-data="{ open:false, activeSlide : 0, slides: [   [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/E4799MXF1UFO8B20A1KL22TIW10D414LG53OM635.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/NLVUHR3XZK99KA3L0G3RN9KW5SS38H5JGC9OTMZ3.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/V2VBI58EVGDGDUWAGHPMU7ZCRLR45U44RY41PZ94.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/GCTTW0ZVF8XHVUHYCRX7JDNOQ8MIQGU06PDNTR53.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/S5S8HHO9GV6DM0JYWU2BU3UUQKT7L0YLB9HAKSKI.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/IVWR12M2NHGMINTXDE032BC6UTA39VRU292I1ZWN.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/CDOM1OFRRB6YA39BOEG4UCX49CZBRE83U8YP5BD8.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/MNR2JKEXNM8TS0TZ3MQFCU3BENQO4MDJN7H6073F.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/VFUONQFYWBP9Y8V8A36HBZZURA47BK7GCNT09PF9.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/ULTVBT0F8TKU5YIT2MZFJOCVF4WL3DA3CBK7EHSZ.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/WPD1NT9QMJPNJK558US7ZNHCC5HEF228A0DIM2E1.jpeg', 'photo'],    [ 'https://landing-page-app-hero-images.s3.amazonaws.com/media/D6VNU75DGJMVR7EYZDTEF7GYVAGBYHU3GTKYUVGW.jpeg', 'photo'],   ] }" @keydown.escape= "open = false"   >
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JNFL7EAC83V0T3295W5K5R6X42MEYJ6F7IHR6U97.jpeg"  alt = "Photo number 1 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 0; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/E4799MXF1UFO8B20A1KL22TIW10D414LG53OM635.jpeg"  alt = "Photo number 1 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/JCZJOM1EPH7UVEG9K6XX28F4BYZD0CYYFG1E6H02.jpeg"  alt = "Photo number 2 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 1; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NLVUHR3XZK99KA3L0G3RN9KW5SS38H5JGC9OTMZ3.jpeg"  alt = "Photo number 2 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/EL312J6LLX2ODT5Y20X2O9J58QONNAVK16N2C5IP.jpeg"  alt = "Photo number 3 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 2; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/V2VBI58EVGDGDUWAGHPMU7ZCRLR45U44RY41PZ94.jpeg"  alt = "Photo number 3 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UO4IPA8JM11UTD1JUDOK27S6H37HWWD7D2L634G6.jpeg"  alt = "Photo number 4 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 3; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/GCTTW0ZVF8XHVUHYCRX7JDNOQ8MIQGU06PDNTR53.jpeg"  alt = "Photo number 4 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/PJZ2RYCJRYAG2BLITX9HHAWEF0209WDTG9B6YZXC.jpeg"  alt = "Photo number 5 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 4; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/S5S8HHO9GV6DM0JYWU2BU3UUQKT7L0YLB9HAKSKI.jpeg"  alt = "Photo number 5 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N0KMGMINOH8Y10JJ4CPS0YQOATIDD2G9E1ILL9W0.jpeg"  alt = "Photo number 6 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 5; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/IVWR12M2NHGMINTXDE032BC6UTA39VRU292I1ZWN.jpeg"  alt = "Photo number 6 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
                                   
-                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/BN434ZRRW68SF71F6YWD0514NCXA03HDJNZRJUB8.jpeg"  alt = "Photo number 7 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
+                            <div class="flex cursor-pointer sm:h-30 md:h-auto md:w-1/3 px-4 mb-8 hover:bg-opacity-40" @click="activeSlide = 6; open = true; " ><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/CDOM1OFRRB6YA39BOEG4UCX49CZBRE83U8YP5BD8.jpeg"  alt = "Photo number 7 of Reliant Movers&#x27;s best work performing a null job"   loading="lazy" ></div>
                         
                                         
                             
@@ -695,7 +736,8 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
     </div>
     
     
-    <div  style= "background-color:#1202fc"  id= "testimonials" class="flex items-center justify-center  bg-blue-800 text-white  py-20 min-w-screen px-4">
+    
+    <div  style= "background-color:#1202fc"  id= "testimonials" class=" flex items-center justify-center  bg-blue-800 text-white  py-20 min-w-screen px-4">
         <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
@@ -891,7 +933,7 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
                 <div class = "flex flex-col space-y-5 md:flex-row md:space-x-5 md:space-y-0 ">
                 
-                <a target= "_blank" href="https://www.google.com/maps/place/Reliant+Movers+%7C+San+Antonio,+Tx+Moving+Company/@29.5447009,-98.5324435,15z/data=!4m5!3m4!1s0x0:0x7223c3b204434ea5!8m2!3d29.5447857!4d-98.5323522">
+                <a target= "_blank" href="https://www.google.com/maps/place/Reliant+Movers+%7C+San+Antonio,+Tx+Moving+Company/@29.5447009,-98.5324435,15z/data=!4m5!3m4!1s0x0:0x7223c3b204434ea5!8m2!3d29.5447857!4d-98.5323522"  class="w-full">
                     <button  
                 onMouseOver="this.style.backgroundColor='white'; this.style.color='#1202fc' "
                 onMouseOut="this.style.backgroundColor='#ffef05'; this.style.color='white'"
@@ -904,13 +946,13 @@ class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  b
                 
              
                 
-                <a target= "_blank" href="https://www.google.com/maps/place/Reliant+Movers+%7C+San+Antonio,+Tx+Moving+Company/@29.5447009,-98.5324435,15z/data=!4m5!3m4!1s0x0:0x7223c3b204434ea5!8m2!3d29.5447857!4d-98.5323522">
+                <a target= "_blank" href="https://www.google.com/maps/place/Reliant+Movers+%7C+San+Antonio,+Tx+Moving+Company/@29.5447009,-98.5324435,15z/data=!4m5!3m4!1s0x0:0x7223c3b204434ea5!8m2!3d29.5447857!4d-98.5323522" class="w-full">
                     <button  
                 onMouseOver="this.style.backgroundColor='white'; this.style.color='#1202fc' "
                 onMouseOut="this.style.backgroundColor='#ffef05'; this.style.color='white'"
                 style="background-color:#ffef05; color:white"               
                 
-                  type="button" class="inline-flex w-full   items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-blue-800 ">
+                  type="button" class="inline-flex w-full  items-center justify-center h-16 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none   text-black  bg-gray-400  hover:bg-white hover:text-blue-800 ">
                             <h5 class="text-2xl font-extrabold">See More Reviews</h5> 
                     </button>
                 </a>
